@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav></nav>
+    <div class="hero">
+        <div class="row align-items-center g-3">
+            <div class="col-7">
+                <h1 class="hero-text">Rock Paper Scissors</h1>
+                <p class="text-muted">Play Rock-Paper-Scissors with a sleek, interactive interface. Test your luck
+                    <br>against the computer and keep track of your
+                    wins in real-time!
+                </p>
+                <a href="#container"><button class="button py-2 px-3 rounded">Play Now</button></a>
+            </div>
+            <div class="col-5">
+                <img src="./hero.png" alt="Rock-Paper-Scissors" height="300px">
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#7E30E1">
+        <path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path>
+        <path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path>
+        <path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path>
+        <path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
+    </svg>
+    <div id="container">
+        <div class="row">
+            <div class="left col">
+                <div class="one" id="options">
+                    <button class="emoji" onclick="paperr()" id="rock"><img src="./paper.jpg" alt=""></button>
+                    <button class="emoji" onclick="rockk()" id="paper"><img src="./rock.jpg" alt=""></button>
+                    <button class="emoji" onclick="scissorss()" id="scissors"><img src="./scissors.jpg" alt=""></button>
+                </div>
+                <button class="reset" onclick="resett()" id="reset">Reset</button>
+            </div>
+            <div class="two col">
+                <div class="right"><!-- outcome -->
+                    <div class="text-muted" id="outcome">
+                        <p>Player : <span id="po"></span></p>
+                        <p>Computer : <span id="co"></span></p>
+                    </div>
+                    <hr>
+                    <!-- result -->
+                    <h1 id="result"></h1>
+                    <!-- score card -->
+                    <div id="score">
+                        <p class="ps">Player Score : <span id="ps">0</span></p>
+                        <p class="cs">Computer Score : <span id="cs">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Keerthana Ravi © 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
